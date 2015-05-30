@@ -10,6 +10,9 @@ $(document).ready(function(){
     getPoem();
   })
 
+  window.setTimeout(function(){
+    $('img').removeClass("animated slideInUp");
+  }, 1000)
 });
 
 

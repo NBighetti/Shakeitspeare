@@ -51,7 +51,7 @@ img {
   position: relative;
   float: right;
   margin-top: 5%;
-  margin-right: 20%;
+  margin-right: 15%;
 }
 
 
@@ -80,4 +80,9 @@ p {
 #welcome > p{
   color: white;
   font-size: 30px;
+}
+
+svg {
+  margin-top: 5%;
+  margin-left: 35%;
 }
