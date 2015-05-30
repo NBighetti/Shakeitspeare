@@ -15,6 +15,9 @@ h1{
   padding: 20px;
   color: white;
   font-family: 'Meddon', cursive;
+  /*font-family: 'Almendra', serif;*/
+  font-style: italic;
+  font-size: 40px;
 }
 
 div {
@@ -72,14 +75,17 @@ p {
 }
 
 #poem > p{
-  font-family: 'Almendra Display', cursive;
+  font-family: 'Almendra', cursive;
   font-size: 25px;
   color: black;
 }
 
 #welcome > p{
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: 'Satisfy', serif;
+  /*font-style: italic;*/
+
 }
 
 svg {
