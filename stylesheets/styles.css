@@ -4,21 +4,17 @@
 
 body{
   margin: 0px;
-  background-image: url(images/pub.jpg);
+  background-image: url(../images/pub.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-header{
-  margin: 0px;
-  padding: 0px;
-}
 
 h1{
+  padding: 20px;
   color: white;
   font-family: 'Meddon', cursive;
-  margin: 0px;
 }
 
 div {
@@ -49,27 +45,38 @@ img {
   z-index: 1;
 }
 
-#poem {
+.words {
   width: 400px;
   height: 400px;
   position: relative;
   float: right;
   margin-right: 10%;
-
-  background-image: url(images/speech-bubble.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*overflow: scroll;*/
 }
 
 
-p{
+#poem {
+  background-image: url(../images/speech-bubble.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*overflow: scroll;*/
+  display: none;
+}
+
+p {
   width: 75%;
   margin: 0 auto;
   padding-top: 30%;
+  position: relative;
   text-align: center;
+}
+
+#poem > p{
   font-family: 'Almendra Display', cursive;
   font-size: 25px;
   color: black;
-  position: relative;
+}
+
+#welcome > p{
+  color: white;
+  font-size: 30px;
 }
