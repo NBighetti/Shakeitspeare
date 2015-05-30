@@ -1,22 +1,39 @@
+var welcomeLoad = 1200;
 
 $(document).ready(function(){
 
-// INSTRUCTS USER TO CLICK TO SHOW POEM
-  $('#welcome').on('click', function(){
-    $('#welcome').hide();
+  //ANIMATIONS
+  $('img'). addClass("animated slideInUp");
+  window.setTimeout(function(){
+    $('.welcome').fadeIn();
+  }, welcomeLoad);
+
+  window.setTimeout(function(){
+    $('.welcome > #greeting').addClass('animated wobble');
+  }, welcomeLoad+500);
+
+  $('svg').hover(function(){
+    $('#instruction').addClass("animated fadeIn")
+    $('#instruction').toggle();
+  })
+
+  // SHOWS POEM ON CLICK
+  $('.welcome').on('click', function(){
+    $('.welcome').hide();
     getPoem();
     $('#poem').show();
   });
 
-// DISPLAYS SPEACH BUBBLE AND POEM
+  // DISPLAYS SPEACH BUBBLE AND POEM
   $('#poem').on('click', function(){
     getPoem();
   })
 
-// REMOVES CLASS FROM SHAKESPEARE TO MAINTAIN DOC. STRUCTURE
+  // REMOVES CLASS FROM SHAKESPEARE TO MAINTAIN DOC. STRUCTURE
   window.setTimeout(function(){
     $('img').removeClass("animated slideInUp");
   }, 1000)
+
 });
 
 

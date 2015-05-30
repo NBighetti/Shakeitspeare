@@ -18,6 +18,8 @@ h1{
   /*font-family: 'Almendra', serif;*/
   font-style: italic;
   font-size: 40px;
+  text-shadow: 2px 3px 2px black;
+
 }
 
 div {
@@ -29,15 +31,6 @@ div {
   overflow: visible;
 }
 
-#shakespeare{
-  width: 75%;
-}
-
-.container {
-  height: 90%;
-  width: 75%;
-  overflow: auto;
-}
 
 img {
   width: 100%;
@@ -48,6 +41,24 @@ img {
   z-index: 1;
 }
 
+p {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 20%;
+  position: relative;
+  text-align: center;
+}
+svg {
+  margin-top: 5%;
+  margin-left: 35%;
+}
+
+.container {
+  height: 90%;
+  width: 75%;
+  overflow: auto;
+}
+
 .words {
   width: 420px;
   height: 320px;
@@ -55,6 +66,8 @@ img {
   float: right;
   margin-top: 5%;
   margin-right: 15%;
+  display: none;
+  overflow: visible;
 }
 
 
@@ -63,15 +76,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: scroll;
-  display: none;
-}
-
-p {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 20%;
-  position: relative;
-  text-align: center;
+  /*display: none;*/
 }
 
 #poem > p{
@@ -80,15 +85,23 @@ p {
   color: black;
 }
 
-#welcome > p{
+#greeting, #instruction {
   color: white;
-  font-size: 40px;
   font-family: 'Satisfy', serif;
-  /*font-style: italic;*/
-
+  margin: 0 auto;
+  text-shadow: 1px 2px 2px black;
 }
 
-svg {
-  margin-top: 5%;
-  margin-left: 35%;
+#greeting {
+  font-size: 43px;
+}
+
+#instruction {
+  font-size: 30px;
+  padding-top: 15px;
+  display: none;
+}
+
+#shakespeare{
+  width: 75%;
 }
