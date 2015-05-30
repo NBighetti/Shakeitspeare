@@ -2,6 +2,7 @@
 $(document).ready(function(){
   $('#welcome').on('click', function(){
     $('#welcome').hide();
+    getPoem();
     $('#poem').show();
   });
 
@@ -11,6 +12,10 @@ $(document).ready(function(){
 
 
 $('#poem').on('click', function(){
+  getPoem();
+})
+
+function getPoem(){
   $.ajax({
     url:'http://ShakeItSpeare.com/api/poem',
     success: function(poemData){
@@ -19,5 +24,5 @@ $('#poem').on('click', function(){
       $('#poem').append('<p></p>');
       $('p').text(poemData.poem);
     }
-  })
-})
+  });
+}
