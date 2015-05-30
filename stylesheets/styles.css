@@ -46,11 +46,12 @@ img {
 }
 
 .words {
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 320px;
   position: relative;
   float: right;
-  margin-right: 10%;
+  margin-top: 5%;
+  margin-right: 20%;
 }
 
 
@@ -58,14 +59,14 @@ img {
   background-image: url(../images/speech-bubble.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /*overflow: scroll;*/
+  overflow: scroll;
   display: none;
 }
 
 p {
   width: 75%;
   margin: 0 auto;
-  padding-top: 30%;
+  padding-top: 20%;
   position: relative;
   text-align: center;
 }

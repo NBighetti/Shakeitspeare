@@ -6,14 +6,12 @@ $(document).ready(function(){
     $('#poem').show();
   });
 
-
+  $('#poem').on('click', function(){
+    getPoem();
+  })
 
 });
 
-
-$('#poem').on('click', function(){
-  getPoem();
-})
 
 function getPoem(){
   $.ajax({
